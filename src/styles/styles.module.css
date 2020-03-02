@@ -1,0 +1,96 @@
+#menuLogo {
+  width: 80%;
+}
+.fullscreen {
+  height: 100vh;
+}
+.halfscreen {
+  height: 90vh;
+}
+.headline {
+  font-size: 40px;
+  font-weight: bold;
+}
+.subheadline {
+  font-size: 23px;
+}
+.ilustrasi {
+  width: 100%;
+  transform: translateY(-100px);
+}
+.underline {
+  width: 600px;
+  height: 7px;
+  border: none;
+  background: radial-gradient(#23aae0 40%, rgba(255, 255, 255) 80%);
+}
+.underline_kelas {
+  width: 600px;
+  height: 7px;
+  border: none;
+  background: radial-gradient(rgba(255, 255, 255) 30%, #35b8e5 70%);
+}
+.sideline {
+  border-image-source: radial-gradient(#23aae0 10%, rgba(255, 255, 255) 95%);
+  border-image-slice: 1;
+}
+#imgPemateri {
+  width: 35%;
+  border: 6px solid;
+  border-radius: 60%;
+  border-color: #c2c2c2;
+}
+#cardPemateri {
+  width: 320px;
+  height: 420px;
+  background: #e1e5ff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+#kelas_logo {
+  width: 70%;
+}
+.cardInfo {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cardJadwal {
+  background-image: url("../assets/Group86.png");
+  background-size: 100% 100%;
+}
+.cardJadwal_content {
+  font-size: 18px;
+  line-height: 15px;
+  color: #114578;
+}
+.style_li {
+  margin: auto;
+  padding: 10px 0px 10px 0px;
+  list-style: none;
+  background-image: url("../assets/Group85.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 25px;
+}
+.cardCP {
+  margin: 100px 0 50px 0;
+  background-image: url("../assets/Group87.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 450px;
+  height: 450px;
+}
+.kontak {
+  position: relative;
+  top: 14%;
+  font-size: 25px;
+  color: #114578;
+  line-height: 5.9rem;
+}
+.iconCP {
+  float: left;
+  position: relative;
+  left: 10%;
+  margin-top: 6%;
+  width: 10%;
+}
