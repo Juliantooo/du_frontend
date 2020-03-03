@@ -11,9 +11,11 @@ const Hero = () => {
     >
       <Row>
         <Col xs="6" sm="6" md="6" className="text-left">
-          <div className="content w-75 mx-auto">
+          <div className="content w-75 mx-auto text-white">
             <div className={`${styles.headline}`}>
-              AYO KEMBANGKAN MINAT <br /> & BAKATMU BERSAMA DOSCOM
+              AYO KEMBANGKAN <span style={{ color: "lightgreen" }}>MINAT</span>
+              <br /> & <span style={{ color: "lightgreen" }}>BAKATMU</span>
+              BERSAMA DOSCOM
             </div>
             <div className={`${styles.subheadline}`}>
               <p>

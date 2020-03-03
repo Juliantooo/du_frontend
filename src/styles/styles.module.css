@@ -94,3 +94,19 @@
   margin-top: 6%;
   width: 10%;
 }
+.testi_height {
+  height: 130vh;
+}
+.about_doscom {
+  font-size: 18px;
+  text-align: justify;
+  color: #114578;
+}
+.sosmed_logo {
+  width: 5%;
+}
+.sosmed {
+  font-size: 18px;
+  color: #114578;
+  line-height: 0.5rem;
+}

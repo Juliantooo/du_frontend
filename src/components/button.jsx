@@ -3,12 +3,12 @@ import styled from "styled-components"
 export const MenuBtn = styled.button`
   width: 120px;
   height: 35px;
+  font-size: 17px;
   color: white;
   box-sizing: border-box;
-  border-radius: 38px;
+  border-radius: 35px;
   margin: 0 15px;
   border: none;
-  padding: 0px;
   background: inherit;
   &:hover {
     border: 4px solid #fff;
@@ -18,9 +18,11 @@ export const MenuBtn = styled.button`
 export const DaftarBtn = styled.button`
   width: 155px;
   height: 45px;
-  color: #blue;
+  font-size: 25px;
+  font-weight: bold;
   border-radius: 65px;
   background: #fff;
+  color: #2776c3;
   border: none;
   &:hover {
     border: 4px solid #2776c3;
