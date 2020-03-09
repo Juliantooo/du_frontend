@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 // import { Row, Col } from "reactstrap"
 import styles from "../../styles/styles.module.css"
-import bgPermateri from "../../assets/Group91.png"
 import CardPemateri from "../pemateri/cardPemateri"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -49,12 +48,7 @@ const Pemateri = () => {
 
   return (
     <div
-      className={`${styles.fullscreen} container-fluid py-5 my-5`}
-      style={{
-        backgroundImage: `url(${bgPermateri})`,
-        backgroundSize: "100% 100vh",
-        backgroundRepeat: "no-repeat"
-      }}
+      className={`${styles.pemateriScreen} ${styles.bgPemateri} container-fluid py-5 my-5`}
     >
       <div
         className="warper h-25 align-items-baseline d-flex justify-content-center"
@@ -65,7 +59,7 @@ const Pemateri = () => {
           <hr className={styles.underline_kelas}></hr>
         </div>
       </div>
-      <div className="container-fluid my-5">
+      <div className="container-fluid my-4">
         <Slider {...settings}>
           {allPemateri.map((pemateri, key) => {
             return (

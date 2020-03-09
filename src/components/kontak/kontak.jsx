@@ -27,12 +27,12 @@ const Kontak = () => {
     }
   ])
   return (
-    <div className={` container my-5 py-5 `} style={{ height: "140vh" }}>
+    <div className={`${styles.kontakScreen} container my-5 py-5 `}>
       <div className={`${styles.headline} title pt-5 mb-5`}>
         Kontak
         <hr className={styles.underline} />
       </div>
-      <Row className="mt-5">
+      <Row className="mt-5 h-100">
         {kontakCP.map((kontak, key) => {
           return (
             <Col xs="12" sm="12" md="6" key={key}>

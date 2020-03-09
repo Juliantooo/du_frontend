@@ -6,7 +6,7 @@ const CardCP = props => {
   const [kontak] = useState(props)
   console.log(props)
   return (
-    <Card className={`${styles.cardCP}`} style={{ border: "none" }}>
+    <Card className={`${styles.cardCP} mx-auto`} style={{ border: "none" }}>
       <div className={`${styles.subheadline} ${styles.kontak}`}>
         <ul
           style={{
@@ -14,21 +14,33 @@ const CardCP = props => {
             margin: "0",
             padding: "0"
           }}
-          className="text-center"
+          className="text-justify"
         >
-          <li>{kontak.nama}</li>
+          <li className="text-center">{kontak.nama}</li>
           <li>
-            <img className={`${styles.iconCP} `} src={kontak.bgwa} alt="" />
+            <img
+              className={`${styles.iconCP} mr-5 `}
+              src={kontak.bgwa}
+              alt=""
+            />
             {kontak.wa}
           </li>
 
           <li>
-            <img className={`${styles.iconCP} `} src={kontak.bgig} alt="" />
+            <img
+              className={`${styles.iconCP} mr-5 `}
+              src={kontak.bgig}
+              alt=""
+            />
             {kontak.ig}
           </li>
 
           <li>
-            <img className={`${styles.iconCP} `} src={kontak.bgtele} alt="" />
+            <img
+              className={`${styles.iconCP} mr-5 `}
+              src={kontak.bgtele}
+              alt=""
+            />
             {kontak.telegram}
           </li>
         </ul>

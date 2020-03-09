@@ -1,5 +1,5 @@
 .bgindex {
-  background-image: url('../assets/Group90.png');
+  background-image: url("../assets/Group90.png");
   background-size: 100% 1300px;
   background-repeat: no-repeat;
 }
@@ -18,6 +18,21 @@
 
 .regisScreen {
   height: 90vh;
+}
+
+.pemateriScreen {
+  height: 100vh;
+}
+
+.jadwalScreen {
+  height: 100vh;
+}
+.kontakScreen {
+  height: 100vh;
+}
+
+.footerScreen {
+  height: 35vh;
 }
 
 .headline {
@@ -52,6 +67,12 @@
 .sideline {
   border-image-source: radial-gradient(#23aae0 10%, rgba(255, 255, 255) 95%);
   border-image-slice: 1;
+}
+
+.bgPemateri {
+  background-image: url("../assets/Group91.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #imgPemateri {
@@ -101,11 +122,11 @@
 }
 
 .cardCP {
-  margin: 100px 0 50px 0;
+  /* margin: 100px 0 50px 0; */
   background-image: url("../assets/Group87.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 450px;
+  width: 80%;
   height: 450px;
 }
 
@@ -135,14 +156,42 @@
   color: #114578;
 }
 
+.doscom_logo {
+  width: 10%;
+}
+
 .sosmed_logo {
   width: 5%;
+}
+
+.bgtesti {
+  background-image: url("../assets/Group88.png");
+  background-size: 100% 65%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.about {
+  font-size: 18px;
+  color: #114578;
+  color: #114578;
+  line-height: normal;
 }
 
 .sosmed {
   font-size: 18px;
   color: #114578;
-  line-height: 0.5rem;
+  line-height: normal;
+}
+.sosmed_text {
+  text-align: right;
+  font-size: 18px;
+  color: #114578;
+  line-height: normal;
+}
+
+.sosmed_text > p {
+  margin: 0;
 }
 
 .slick-slide .slick_center {
@@ -152,9 +201,8 @@
 /* Mobile */
 
 @media only screen and (max-width: 700px) {
-
   .bgindex {
-    background-image: url('../assets/Group90.png');
+    background-image: url("../assets/Group90.png");
     background-size: 100% 700px;
     background-repeat: no-repeat;
   }
@@ -179,6 +227,21 @@
 
   .regisScreen {
     height: 100vh;
+  }
+
+  .jadwalScreen {
+    height: 85vh;
+  }
+
+  .kontakScreen {
+    height: 150vh;
+  }
+  .pemateriScreen {
+    height: 120vh;
+  }
+
+  .footerScreen {
+    height: 30vh;
   }
 
   .headline {
@@ -214,6 +277,11 @@
     border-image-source: radial-gradient(#23aae0 10%, rgba(255, 255, 255) 95%);
     border-image-slice: 1;
   }
+  .bgPemateri {
+    background-image: url("../assets/Group91.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   #imgPemateri {
     width: 35%;
@@ -239,8 +307,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-
-
   .cardJadwal {
     background-image: url("../assets/Group86.png");
     background-size: 100% 100%;
@@ -251,7 +317,7 @@
     color: #114578;
   }
 
-  .cardJadwal_content>.col>p {
+  .cardJadwal_content > .col > p {
     margin: 0;
   }
 
@@ -268,27 +334,27 @@
   }
 
   .cardCP {
-    margin: 100px 0 50px 0;
+    /* margin: 100px 0 50px 0; */
     background-image: url("../assets/Group87.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
   }
 
   .kontak {
     position: relative;
-    top: 14%;
-    font-size: 25px;
+    top: 17%;
+    font-size: 20px;
     color: #114578;
-    line-height: 5.9rem;
+    line-height: 5.8rem;
   }
 
   .iconCP {
     float: left;
     position: relative;
     left: 10%;
-    margin-top: 6%;
+    margin-top: 8%;
     width: 10%;
   }
 
@@ -301,15 +367,46 @@
     text-align: justify;
     color: #114578;
   }
-
+  .about_doscom > p {
+    margin-bottom: 5px;
+  }
   .sosmed_logo {
-    width: 5%;
+    width: 10%;
+  }
+
+  .about {
+    text-align: left;
+    font-size: 10.2px;
+    color: #114578;
+    line-height: normal;
   }
 
   .sosmed {
-    font-size: 12px;
+    margin-top: 100px;
+    text-align: right;
+    font-size: 11px;
     color: #114578;
-    line-height: 0.5rem;
+    line-height: 0.5em;
+  }
+  .sosmed_text {
+    text-align: right;
+    font-size: 11px;
+    color: #114578;
+    line-height: 0.1em;
+  }
+  .sosmed_text > p {
+    line-height: normal;
+  }
+
+  .bgtesti {
+    background-image: url("../assets/Group88.png");
+    background-size: 100% 45%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  .doscom_logo {
+    width: 14%;
   }
 
   .slick-slide .slick_center {

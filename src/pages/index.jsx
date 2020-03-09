@@ -1,7 +1,6 @@
 import React from "react"
 import Menu from "../components/navbar/navbar"
 import Hero from "../components/hero/hero"
-import testiBg from "../assets/Group88.png"
 import Kelas from "../components/kelas/listKelas"
 import Pemateri from "../components/pemateri/pemateri"
 import InfoRegis from "../components/info_regis/infoRegis"
@@ -20,14 +19,7 @@ const Home = () => {
       <Pemateri />
       <InfoRegis />
       <Jadwal />
-      <div
-        style={{
-          backgroundImage: `url(${testiBg})`,
-          backgroundSize: "100% 65%",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center bottom"
-        }}
-      >
+      <div className={styles.bgtesti}>
         <Kontak />
         <Testimoni />
         <Footer />
