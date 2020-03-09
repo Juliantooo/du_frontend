@@ -27,7 +27,7 @@ const Kontak = () => {
     }
   ])
   return (
-    <div className={` container`} style={{ height: "140vh" }}>
+    <div className={` container my-5 py-5 `} style={{ height: "140vh" }}>
       <div className={`${styles.headline} title pt-5 mb-5`}>
         Kontak
         <hr className={styles.underline} />

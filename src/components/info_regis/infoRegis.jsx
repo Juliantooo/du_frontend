@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Row, Col } from "reactstrap"
 import styles from "../../styles/styles.module.css"
 import CardInfo from "./cardInfo"
@@ -24,14 +24,30 @@ const InfoRegis = () => {
     }
   ])
 
+  useEffect(() => {
+    if (window.innerWidth <= 700) {
+      document
+        .getElementsByClassName("row_info")[0]
+        .appendChild(document.getElementsByClassName("ilu_info")[0])
+      document
+        .getElementsByClassName("row_info")[0]
+        .appendChild(document.getElementsByClassName("card_info")[0])
+    }
+  })
+
   return (
-    <div className={`${styles.fullscreen} container-fluid`}>
-      <div className={`${styles.headline} title justify-content-center pt-5`}>
+    <div className={`${styles.regisScreen} container-fluid my-5`}>
+      <div
+        className={`${styles.headline} title justify-content-center pb-4s my-5`}
+      >
         Biaya, Tempat & Waktu
         <hr className={styles.underline} />
       </div>
-      <Row className="justify-content-center mt-5">
-        <Col xs="6" sm="6" md="4">
+      <Row
+        className="justify-content-center row_info container-fluid d-flex align-items-center h-75"
+        style={{ margin: "0" }}
+      >
+        <Col xs="12" sm="12" md="4" className="card_info">
           {infoRegis.map((info, key) => {
             return (
               <Row key={key}>
@@ -40,13 +56,8 @@ const InfoRegis = () => {
             )
           })}
         </Col>
-        <Col xs="6" sm="6" md="4">
-          <img
-            src={ilustrasi}
-            alt=""
-            className={styles.ilustrasi}
-            style={{ transform: "translateY(70px)" }}
-          />
+        <Col xs="12" sm="12" md="4" className="ilu_info my-4">
+          <img src={ilustrasi} alt="" style={{ width: "100%" }} />
         </Col>
       </Row>
     </div>

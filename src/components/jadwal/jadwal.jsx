@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Row, Col } from "reactstrap"
 import styles from "../../styles/styles.module.css"
 import { JadwalMenu } from "../button"
 import CardJadwal from "./cardJadwal"
@@ -57,27 +56,31 @@ const Jadwal = () => {
     }
   ])
   return (
-    <div className={`${styles.fullscreen} container`}>
-      <div
-        className={`${styles.headline} title justify-content-center pt-5 mb-5`}
-      >
+    <div className={`${styles.fullscreen} container my-5 py-5`}>
+      <div className={`${styles.headline} title justify-content-center `}>
         Biaya, Tempat & Waktu
         <hr className={styles.underline} />
       </div>
-      <Row className="my-5 justify-content-center">
+      <div
+        className=" d-flex flex-row container-fluid my-5 justify-content-center"
+        style={{ margin: "0" }}
+      >
         {jadwalButton.map((jadwal, key) => {
           return (
-            <Col xs="2" sm="2" md="2" key={key}>
+            <div className="justify-content-center" key={key}>
               <JadwalMenu>{jadwal.menu}</JadwalMenu>
-            </Col>
+            </div>
           )
         })}
-      </Row>
+      </div>
       <div className="warper w-100 ">
         <ul style={{ padding: "0" }}>
           {rundownWeb.map((rundown, key) => {
             return (
-              <li className={`${styles.style_li} `} key={key}>
+              <li
+                className={`${styles.style_li} justify-content-center my-4`}
+                key={key}
+              >
                 <CardJadwal {...rundown} />
               </li>
             )

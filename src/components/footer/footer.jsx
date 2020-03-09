@@ -22,7 +22,7 @@ const Footer = () => {
               <p className={styles.subheadline} style={{ fontWeight: "bold" }}>
                 Tentang DOSCOM
               </p>
-              <p>
+              <p className={styles.sosmed}>
                 Kami adalah komunitas open source di bidang perangkat lunak yang
                 memilik visi untuk Memasyarakatkan Open Source dan Meng Open
                 Source-kan Masyrakat melalui berbagai kegitan seperti workshop,

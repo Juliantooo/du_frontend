@@ -1,13 +1,55 @@
-import React from "react"
-import { Row, Col } from "reactstrap"
+import React, { useState } from "react"
+// import { Row, Col } from "reactstrap"
 import styles from "../../styles/styles.module.css"
 import bgPermateri from "../../assets/Group91.png"
 import CardPemateri from "../pemateri/cardPemateri"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+
+//slider setting
+
+const settings = {
+  className: "center",
+  centerMode: true,
+  infinite: true,
+  slidesToScroll: 1,
+  responsive: [
+    { breakpoint: 500, settings: { autoplay: true, slidesToShow: 1 } }
+  ],
+  centerPadding: "20",
+  slidesToShow: 3,
+  speed: 500,
+  useCSS: true
+}
 
 const Pemateri = () => {
+  const [allPemateri] = useState([
+    {
+      nama: "Wahyu",
+      kelas: "Web"
+    },
+    {
+      nama: "Wahyu",
+      kelas: "Web"
+    },
+    {
+      nama: "Wahyu",
+      kelas: "Web"
+    },
+    {
+      nama: "Wahyu",
+      kelas: "Web"
+    },
+    {
+      nama: "Wahyu",
+      kelas: "Web"
+    }
+  ])
+
   return (
     <div
-      className={`${styles.fullscreen}`}
+      className={`${styles.fullscreen} container-fluid py-5 my-5`}
       style={{
         backgroundImage: `url(${bgPermateri})`,
         backgroundSize: "100% 100vh",
@@ -23,11 +65,17 @@ const Pemateri = () => {
           <hr className={styles.underline_kelas}></hr>
         </div>
       </div>
-      <Row className="justify-content-center" style={{ margin: "0" }}>
-        <Col md="3" className="align-items-center">
-          <CardPemateri />
-        </Col>
-      </Row>
+      <div className="container-fluid my-5">
+        <Slider {...settings}>
+          {allPemateri.map((pemateri, key) => {
+            return (
+              <div key={key}>
+                <CardPemateri {...pemateri} />
+              </div>
+            )
+          })}
+        </Slider>
+      </div>
     </div>
   )
 }

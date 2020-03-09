@@ -27,6 +27,11 @@ export const DaftarBtn = styled.button`
   &:hover {
     border: 4px solid #2776c3;
   }
+  @media (max-width: 700px) {
+    width: 120px;
+    height: 35px;
+    font-size: 15px;
+  }
 `
 export const JadwalMenu = styled.button`
   width: 110px;
@@ -38,5 +43,10 @@ export const JadwalMenu = styled.button`
   border: none;
   &:hover {
     background: #e1e5ff;
+  }
+  @media (max-width: 700px) {
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
   }
 `

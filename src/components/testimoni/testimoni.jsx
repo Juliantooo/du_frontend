@@ -5,7 +5,7 @@ const Testimoni = () => {
   return (
     <div className={`${styles.testi_height} container `}>
       <div className={`${styles.headline} title pt-5 mb-5`}>
-        Kontak
+        Testi
         <hr className={styles.underline} />
       </div>
       ....

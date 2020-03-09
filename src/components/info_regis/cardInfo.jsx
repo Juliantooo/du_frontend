@@ -14,16 +14,10 @@ const CardInfo = props => {
         <Media middle className="my-auto w-25">
           <img src={dumyMedia} width="65%" alt="" />
         </Media>
-        <Media body>
-          <Media style={{ fontWeight: "lighter", fontSize: "22px" }}>
-            {info.head}
-          </Media>
-          <Media style={{ fontWeight: "bolder", fontSize: "22px" }}>
-            {info.body}
-          </Media>
-          <Media style={{ fontWeight: "lighter", fontSize: "22px" }}>
-            {info.footer}
-          </Media>
+        <Media body className={styles.infoCard}>
+          <Media>{info.head}</Media>
+          <Media>{info.body}</Media>
+          <Media>{info.footer}</Media>
         </Media>
       </Media>
     </Card>

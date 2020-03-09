@@ -1,25 +1,19 @@
 import React from "react"
-import Menu from "../components/navbar"
-import Hero from "../components/hero"
-import heroBg from "../assets/Group90.png"
+import Menu from "../components/navbar/navbar"
+import Hero from "../components/hero/hero"
 import testiBg from "../assets/Group88.png"
-import Kelas from "../components/listKelas"
+import Kelas from "../components/kelas/listKelas"
 import Pemateri from "../components/pemateri/pemateri"
 import InfoRegis from "../components/info_regis/infoRegis"
 import Jadwal from "../components/jadwal/jadwal"
 import Kontak from "../components/kontak/kontak"
 import Footer from "../components/footer/footer"
 import Testimoni from "../components/testimoni/testimoni"
+import styles from "../styles/styles.module.css"
 
 const Home = () => {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${heroBg})`,
-        backgroundSize: "100% 1000px",
-        backgroundRepeat: "no-repeat"
-      }}
-    >
+    <div className={styles.bgindex}>
       <Menu />
       <Hero />
       <Kelas />
