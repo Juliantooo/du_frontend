@@ -36,10 +36,11 @@ const InfoRegis = () => {
   })
 
   return (
-    <div className={`${styles.regisScreen} container-fluid my-5`}>
+    <div
+      className={`${styles.regisScreen} container-fluid  d-flex flex-column align-items-center`}
+    >
       <div className={`${styles.headline} title justify-content-center  my-5`}>
         Biaya, Tempat & Waktu
-        <hr className={styles.underline} />
       </div>
       <Row
         className="justify-content-center row_info container-fluid d-flex align-items-center h-75"

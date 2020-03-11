@@ -56,7 +56,6 @@ const Pemateri = () => {
       >
         <div className="title my-5 justify-content-center">
           <p className={`${styles.headline} mb-3`}>Pemateri</p>
-          <hr className={styles.underline_kelas}></hr>
         </div>
       </div>
       <div className="container-fluid my-4">

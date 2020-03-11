@@ -58,8 +58,7 @@ const Jadwal = () => {
   return (
     <div className={`${styles.jadwalScreen} container my-5 pt-5`}>
       <div className={`${styles.headline} title justify-content-center `}>
-        Biaya, Tempat & Waktu
-        <hr className={styles.underline} />
+        Jadwal
       </div>
       <div
         className=" d-flex flex-row container-fluid my-5 justify-content-center"

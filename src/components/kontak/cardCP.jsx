@@ -1,12 +1,13 @@
 import React, { useState } from "react"
 import { Card } from "reactstrap"
 import styles from "../../styles/styles.module.css"
+import ImageKontak from "./image_kontak"
 
 const CardCP = props => {
   const [kontak] = useState(props)
-  console.log(props)
   return (
     <Card className={`${styles.cardCP} mx-auto`} style={{ border: "none" }}>
+      <ImageKontak />
       <div className={`${styles.subheadline} ${styles.kontak}`}>
         <ul
           style={{

@@ -36,7 +36,11 @@ const CardKelas = props => {
         <div className={`${styles.deskripsi_kelas}  text-left mx-3`}>
           <div className={styles.subheadline}>{kelas.kelas}</div>
           <p>{kelas.deskripsi}</p>
-          <p>Kuota Tersisa : {kelas.kuota}</p>
+          <p
+            className={`${styles.bgKuota} d-flex align-items-center justify-content-center`}
+          >
+            Kuota Tersisa : {kelas.kuota}
+          </p>
         </div>
       </Col>
     </Row>

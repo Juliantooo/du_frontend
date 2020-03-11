@@ -27,12 +27,9 @@ const Kontak = () => {
     }
   ])
   return (
-    <div className={`${styles.kontakScreen} container my-5 py-5 `}>
-      <div className={`${styles.headline} title pt-5 mb-5`}>
-        Kontak
-        <hr className={styles.underline} />
-      </div>
-      <Row className="mt-5 h-100">
+    <div className={`${styles.kontakScreen} container`}>
+      <div className={`${styles.headline} title py-5`}>Kontak</div>
+      <Row className="mt-5 d-flex flex-row align-items-center h-100">
         {kontakCP.map((kontak, key) => {
           return (
             <Col xs="12" sm="12" md="6" key={key}>

@@ -16,7 +16,7 @@ const CardInfo = props => {
         </Media>
         <Media body className={styles.infoCard}>
           <Media>{info.head}</Media>
-          <Media>{info.body}</Media>
+          <Media style={{ fontWeight: "bold" }}>{info.body}</Media>
           <Media>{info.footer}</Media>
         </Media>
       </Media>
