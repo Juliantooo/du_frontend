@@ -1,6 +1,6 @@
 .bgindex {
-  background-image: url("../assets/Group90.png");
-  background-size: 100% 1300px;
+  background-image: url("../assets/Group144.png");
+  background-size: 100% 1400px;
   background-repeat: no-repeat;
 }
 
@@ -12,10 +12,6 @@
   height: 100vh;
 }
 
-.halfscreen {
-  height: 90vh;
-}
-
 .regisScreen {
   height: 90vh;
 }
@@ -24,13 +20,20 @@
   height: 100vh;
 }
 
+.list_kelasScreen {
+  min-height: 140vh;
+}
+
 .jadwalScreen {
   height: 100vh;
 }
-.kontakScreen {
-  height: 100vh;
-}
 
+.kontakScreen {
+  height: 80vh;
+}
+.testiScreen {
+  height: 130vh;
+}
 .footerScreen {
   height: 35vh;
 }
@@ -50,24 +53,32 @@
   transform: translateY(-30px);
 }
 
-.underline {
-  width: 600px;
-  height: 7px;
-  border: none;
-  background: radial-gradient(#23aae0 40%, rgba(255, 255, 255) 80%);
-}
-
-.underline_kelas {
-  width: 600px;
-  height: 7px;
-  border: none;
-  background: radial-gradient(rgba(255, 255, 255) 30%, #35b8e5 70%);
-}
-
 .sideline {
   border-image-source: radial-gradient(#23aae0 10%, rgba(255, 255, 255) 95%);
   border-image-slice: 1;
 }
+
+/* .Rectangle1 {
+  content: url("../assets/Group\ 148.png");
+  width: 300px;
+  position: relative;
+  top: 30%;
+  right: 0;
+}
+.Rectangle2 {
+  content: url("../assets/Group\ 149.png");
+  width: 300px;
+  position: relative;
+  left: 0;
+  top: 50%;
+}
+.Rectangle3 {
+  content: url("../assets/Group\ 147.png");
+  width: 300px;
+  position: relative;
+  bottom: 20%;
+  right: 0;
+} */
 
 .bgPemateri {
   background-image: url("../assets/Group91.png");
@@ -95,6 +106,14 @@
   width: 70%;
 }
 
+.bgKuota {
+  background-image: url("../assets/Group150.png");
+  background-size: 300px 50px;
+  text-align: center;
+  height: 50px;
+  width: 300px;
+  background-repeat: no-repeat;
+}
 .cardInfo {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -129,19 +148,25 @@
   width: 80%;
   height: 450px;
 }
-
+.imgCP {
+  border-radius: 50%;
+  width: 30%;
+  border: 5px solid rgb(211, 206, 206);
+  position: relative;
+  top: -50%;
+}
 .kontak {
   position: relative;
-  top: 14%;
+  top: -13%;
   font-size: 25px;
   color: #114578;
-  line-height: 5.9rem;
+  line-height: 5.5rem;
 }
 
 .iconCP {
   float: left;
   position: relative;
-  left: 10%;
+  left: 8%;
   margin-top: 6%;
   width: 10%;
 }
@@ -183,6 +208,7 @@
   color: #114578;
   line-height: normal;
 }
+
 .sosmed_text {
   text-align: right;
   font-size: 18px;
@@ -202,7 +228,7 @@
 
 @media only screen and (max-width: 700px) {
   .bgindex {
-    background-image: url("../assets/Group90.png");
+    background-image: url("../assets/Group151.png");
     background-size: 100% 700px;
     background-repeat: no-repeat;
   }
@@ -236,8 +262,12 @@
   .kontakScreen {
     height: 150vh;
   }
+
   .pemateriScreen {
     height: 120vh;
+  }
+  .testiScreen {
+    height: 110vh;
   }
 
   .footerScreen {
@@ -277,6 +307,7 @@
     border-image-source: radial-gradient(#23aae0 10%, rgba(255, 255, 255) 95%);
     border-image-slice: 1;
   }
+
   .bgPemateri {
     background-image: url("../assets/Group91.png");
     background-size: cover;
@@ -305,6 +336,10 @@
 
   .cardInfo {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .infoCard {
+    font-size: 14px;
   }
 
   .cardJadwal {
@@ -367,9 +402,11 @@
     text-align: justify;
     color: #114578;
   }
+
   .about_doscom > p {
     margin-bottom: 5px;
   }
+
   .sosmed_logo {
     width: 10%;
   }
@@ -388,14 +425,16 @@
     color: #114578;
     line-height: 0.5em;
   }
+
   .sosmed_text {
     text-align: right;
     font-size: 11px;
     color: #114578;
     line-height: 0.1em;
   }
+
   .sosmed_text > p {
-    line-height: normal;
+    line-height: normals;
   }
 
   .bgtesti {
