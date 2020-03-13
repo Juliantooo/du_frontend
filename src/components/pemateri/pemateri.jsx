@@ -14,41 +14,52 @@ const settings = {
   infinite: true,
   slidesToScroll: 1,
   responsive: [
-    { breakpoint: 500, settings: { autoplay: true, slidesToShow: 1 } }
+    {
+      breakpoint: 500,
+      settings: {
+        autoplay: true,
+        slidesToShow: 1,
+        className: "center",
+        centerMode: true,
+        centerPadding: "0",
+        infinite: true
+      }
+    }
   ],
   centerPadding: "20",
   slidesToShow: 3,
   speed: 500,
+  autoplay: true,
   useCSS: true
 }
 
 const Pemateri = () => {
   const [allPemateri] = useState([
     {
-      nama: "Wahyu",
-      kelas: "Web"
+      nama: "WAHYU DWI RAMADHAN",
+      kelas: "Kelas Web"
     },
     {
-      nama: "Wahyu",
-      kelas: "Web"
+      nama: "NOVAN ADHAGARA KERISTIANTO",
+      kelas: "Kelas Andorid"
     },
     {
-      nama: "Wahyu",
-      kelas: "Web"
+      nama: "ARAVIKA PRAKUSIYA",
+      kelas: "Kelas Blender"
     },
     {
-      nama: "Wahyu",
-      kelas: "Web"
+      nama: "HUSIN SUFI",
+      kelas: "Kelas Python"
     },
     {
-      nama: "Wahyu",
-      kelas: "Web"
+      nama: "ILHAM ADI SETIAWAN",
+      kelas: "Kelas DevOps"
     }
   ])
 
   return (
     <div
-      className={`${styles.pemateriScreen} ${styles.bgPemateri} container-fluid py-5 my-5`}
+      className={`${styles.pemateriScreen} ${styles.bgPemateri} container-fluid`}
     >
       <div
         className="warper h-25 align-items-baseline d-flex justify-content-center"
