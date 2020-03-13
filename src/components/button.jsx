@@ -16,21 +16,19 @@ export const MenuBtn = styled.button`
 `
 
 export const DaftarBtn = styled.button`
-  width: 155px;
-  height: 45px;
+  width: 250px;
+  height: 50px;
   font-size: 25px;
   font-weight: bold;
-  border-radius: 65px;
-  background: #fff;
-  color: #2776c3;
+  background: inherit;
+  border-radius: 10px;
+  color: #fff;
   border: none;
-  &:hover {
-    border: 4px solid #2776c3;
-  }
+  border: 4px solid #fff;
   @media (max-width: 700px) {
-    width: 120px;
-    height: 35px;
-    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
   }
 `
 export const JadwalMenu = styled.button`
