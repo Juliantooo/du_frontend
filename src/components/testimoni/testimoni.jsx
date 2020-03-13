@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "../../styles/styles.module.css"
 import Slider from "react-slick"
+import CardTesti from "./cardTestimoni"
 
 //Slider Setting
 const settings = {
-  dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
@@ -12,36 +12,49 @@ const settings = {
 }
 
 const Testimoni = () => {
+  const [testimoni] = useState([
+    {
+      nama: "~ Safira, Peserta kelas Web DU 2018",
+      testi:
+        "“ Acaranya menyenangkan, pengajarnya asik- asik pelajaranya sangatmenarik. “"
+    },
+    {
+      nama: "~ Danang, Peserta kelas Android DU 2018",
+      testi:
+        "“ Acaranya menyenangkan, pengajarnya asik- asik pelajaranya sangatmenarik. “"
+    },
+    {
+      nama: "~ Dudung, Peserta kelas Python DU 2018",
+      testi:
+        "“ Acaranya menyenangkan, pengajarnya asik- asik pelajaranya sangatmenarik. “"
+    },
+    {
+      nama: "~ Ricardo, Peserta kelas Blender DU 2018",
+      testi:
+        "“ Acaranya menyenangkan, pengajarnya asik- asik pelajaranya sangatmenarik. “"
+    },
+    {
+      nama: "~ Jotaro, Peserta kelas DevOps DU 2018",
+      testi:
+        "“ Acaranya menyenangkan, pengajarnya asik- asik pelajaranya sangatmenarik. “"
+    }
+  ])
   return (
     <div className={`${styles.testiScreen} container`}>
-      <div
-        className="warper h-50 align-items-center my-5 d-flex justify-content-center"
-        style={{ paddingTop: "25px" }}
-      >
+      <div className="warper h-50 align-items-end d-flex justify-content-center">
         <div className="title justify-content-center">
           <p className={`${styles.headline} `}>Testimoni</p>
         </div>
       </div>
       <div className="container-fluid mt-5">
         <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+          {testimoni.map((testi, key) => {
+            return (
+              <div key={key}>
+                <CardTesti {...testi} />
+              </div>
+            )
+          })}
         </Slider>
       </div>
     </div>
