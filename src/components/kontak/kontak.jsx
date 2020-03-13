@@ -8,7 +8,7 @@ import instagram from "../../assets/instagram.png"
 const Kontak = () => {
   const [kontakCP] = useState([
     {
-      nama: "Tenesia",
+      nama: "TENESIA AMALIA PUTRI",
       wa: "081 111 442 452",
       ig: "@tene",
       telegram: "@tene",
@@ -17,7 +17,7 @@ const Kontak = () => {
       bgig: `${instagram}`
     },
     {
-      nama: "Chist",
+      nama: "ENDIKA ANDRE CHRISTANO",
       wa: "081 111 442 452",
       ig: "@christ",
       telegram: "@christ",
@@ -28,7 +28,7 @@ const Kontak = () => {
   ])
   return (
     <div className={`${styles.kontakScreen} container`}>
-      <div className={`${styles.headline} title py-5`}>Kontak</div>
+      <div className={`${styles.headline} title`}>Kontak</div>
       <Row className="mt-5 d-flex flex-row align-items-center h-100">
         {kontakCP.map((kontak, key) => {
           return (
