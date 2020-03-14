@@ -1,7 +1,23 @@
 .bgindex {
+  background-position-y: -1px;
   background-image: url("../assets/Group144.png");
   background-size: 100% 1400px;
   background-repeat: no-repeat;
+}
+
+.bgnav {
+  background-position-y: -1px;
+  background-image: url("../assets/Group144.png");
+  background-size: 100% 3200px;
+  background-repeat: no-repeat;
+}
+
+.navBg {
+  background: linear-gradient(
+    342.43deg,
+    #2776c3 -1.93%,
+    rgba(59, 212, 244, 0) 96.89%
+  );
 }
 
 #menuLogo {
@@ -21,7 +37,7 @@
 }
 
 .list_kelasScreen {
-  min-height: 140vh;
+  min-height: 150vh;
 }
 
 .jadwalScreen {
@@ -230,11 +246,10 @@
 #cardTesti {
   width: 618px;
   height: 286px;
-  background: #FCFCFC;
+  background: #fcfcfc;
   border-radius: 22px;
   border: none;
 }
-
 
 .kata_testi {
   font-style: normal;
@@ -272,12 +287,23 @@
   line-height: normal;
 }
 
-.sosmed_text>p {
+.sosmed_text > p {
   margin: 0;
 }
 
 .slick-slide .slick_center {
   transform: scale(1.1);
+}
+
+/* Efek */
+.hidden {
+  opacity: 0;
+  transform: translateX(-35px);
+}
+.showUp {
+  opacity: 1;
+  transform: translateY(20px);
+  transition: 1.5s;
 }
 
 /* Mobile */
@@ -290,8 +316,7 @@
   }
 
   #menuLogo {
-    width: 70%;
-    margin: auto;
+    width: 100%;
   }
 
   #minify {
@@ -395,7 +420,6 @@
     width: 100%;
   }
 
-
   .nama_kelas {
     font-size: 20px;
   }
@@ -431,7 +455,7 @@
     color: #114578;
   }
 
-  .cardJadwal_content>.col>p {
+  .cardJadwal_content > .col > p {
     margin: 0;
   }
 
@@ -490,7 +514,7 @@
     color: #114578;
   }
 
-  .about_doscom>p {
+  .about_doscom > p {
     margin-bottom: 5px;
   }
 
@@ -520,7 +544,7 @@
     line-height: 0.1em;
   }
 
-  .sosmed_text>p {
+  .sosmed_text > p {
     line-height: normals;
   }
 
@@ -534,11 +558,10 @@
   #cardTesti {
     width: 95%;
     height: 180px;
-    background: #FCFCFC;
+    background: #fcfcfc;
     border-radius: 22px;
     border: none;
   }
-
 
   .kata_testi {
     font-style: normal;
@@ -569,7 +592,7 @@
     font-size: 80%;
   }
 
-  .sosmed_text>p {
+  .sosmed_text > p {
     line-height: normal;
   }
 }

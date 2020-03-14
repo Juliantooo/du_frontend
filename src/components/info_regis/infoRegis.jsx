@@ -38,6 +38,7 @@ const InfoRegis = () => {
   return (
     <div
       className={`${styles.regisScreen} container-fluid  d-flex flex-column align-items-center`}
+      id={3}
     >
       <div className={`${styles.headline} title justify-content-center  my-5`}>
         Biaya, Tempat & Waktu

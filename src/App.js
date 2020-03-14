@@ -1,13 +1,14 @@
-import React from 'react';
-import './App.css';
-import Home from '../src/pages/index'
+import React from "react"
+import "./App.css"
+// import Home from "../src/pages/index"
+import Menu from "../src/components/navbar/navbar"
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Menu />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

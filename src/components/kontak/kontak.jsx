@@ -27,7 +27,7 @@ const Kontak = () => {
     }
   ])
   return (
-    <div className={`${styles.kontakScreen} container`}>
+    <div className={`${styles.kontakScreen} container`} id={5}>
       <div className={`${styles.headline} title`}>Kontak</div>
       <Row className="mt-5 d-flex flex-row align-items-center h-100">
         {kontakCP.map((kontak, key) => {

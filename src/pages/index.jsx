@@ -1,5 +1,4 @@
 import React from "react"
-import Menu from "../components/navbar/navbar"
 import Hero from "../components/hero/hero"
 import Kelas from "../components/kelas/listKelas"
 import Pemateri from "../components/pemateri/pemateri"
@@ -13,7 +12,6 @@ import styles from "../styles/styles.module.css"
 const Home = () => {
   return (
     <div className={styles.bgindex}>
-      <Menu />
       <Hero />
       <Kelas />
       <Pemateri />

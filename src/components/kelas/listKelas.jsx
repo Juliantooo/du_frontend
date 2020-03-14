@@ -53,8 +53,8 @@ const Kelas = () => {
   ])
 
   return (
-    <div className={`${styles.list_kelasScreen} py-5`}>
-      <div className="title py-5 ">
+    <div className={`${styles.list_kelasScreen} py-5 my-5`} id={1}>
+      <div className="title py-5 my-5">
         <p className={`${styles.headline} text-center mt-5 `}>Kelas & Materi</p>
       </div>
       {daftarKelas.map((kelas, key) => {

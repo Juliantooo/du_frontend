@@ -56,7 +56,7 @@ const Jadwal = () => {
     }
   ])
   return (
-    <div className={`${styles.jadwalScreen} container`}>
+    <div className={`${styles.jadwalScreen} container`} id={4}>
       <div className={`${styles.headline} title justify-content-center `}>
         Jadwal
       </div>

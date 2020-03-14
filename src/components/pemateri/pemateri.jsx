@@ -60,6 +60,7 @@ const Pemateri = () => {
   return (
     <div
       className={`${styles.pemateriScreen} ${styles.bgPemateri} container-fluid`}
+      id={2}
     >
       <div
         className="warper h-25 align-items-baseline d-flex justify-content-center"
