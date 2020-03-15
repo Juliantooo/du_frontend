@@ -13,7 +13,7 @@ const CardJadwal = props => {
       }`}
       style={{ border: "none" }}
     >
-      <Row className={styles.cardJadwal_content}>
+      <Row className={styles.cardJadwal_content} style={{ margin: "0" }}>
         <Col xs="6" sm="6" md="6" className="mt-2">
           <p>{rundown.todo}</p>
           <p style={{ fontWeight: "bold" }}>{rundown.pertemuan}</p>
