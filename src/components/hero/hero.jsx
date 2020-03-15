@@ -13,18 +13,20 @@ const Hero = () => {
   const classDU =
     window.innerWidth <= 700
       ? `w-75 mx-auto text-white text-center`
-      : `w-75 mx-auto text-white text-left`
+      : `w-75 ml-5 pl-5 text-white text-left`
 
   useEffect(() => {
     setTimeout(() => {
       document
         .getElementsByClassName("Hero")[0]
-        .classList.replace("invisible", `${styles.showUp}`)
-    }, 1200)
+        .classList.replace(`${styles.hidden}`, `${styles.showUp}`)
+    }, 1500)
   })
 
   return (
-    <div className={`${styles.fullscreen} Hero container-fluid invisible `}>
+    <div
+      className={`${styles.fullscreen} Hero container-fluid ${styles.hidden} `}
+    >
       <Row className={classHero}>
         <Col xs="12" sm="12" md="8" className="justify-content-center">
           <div className={classDU}>

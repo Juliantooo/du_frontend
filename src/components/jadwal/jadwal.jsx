@@ -1,7 +1,8 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styles from "../../styles/styles.module.css"
 import { JadwalMenu } from "../button"
 import CardJadwal from "./cardJadwal"
+import { ShowEachElementJadwal } from "../../scriptJs/script"
 
 const Jadwal = () => {
   const [jadwalButton] = useState([
@@ -55,6 +56,9 @@ const Jadwal = () => {
       jam: "xx:xx-xx:xx"
     }
   ])
+  useEffect(() => {
+    window.addEventListener("scroll", () => ShowEachElementJadwal())
+  })
   return (
     <div className={`${styles.jadwalScreen} container`} id={4}>
       <div className={`${styles.headline} title justify-content-center `}>
@@ -77,7 +81,7 @@ const Jadwal = () => {
           {rundownWeb.map((rundown, key) => {
             return (
               <li
-                className={`${styles.style_li} justify-content-center my-4`}
+                className={`${styles.style_li} ${styles.hiddenJadwal} justify-content-center my-4`}
                 key={key}
               >
                 <CardJadwal {...rundown} />

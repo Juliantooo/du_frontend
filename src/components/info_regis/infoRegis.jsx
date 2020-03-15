@@ -4,6 +4,7 @@ import styles from "../../styles/styles.module.css"
 import CardInfo from "./cardInfo"
 import ilustrasi from "../../assets/logo1.png"
 import { useState } from "react"
+import { ShowEachElementInfoRegis } from "../../scriptJs/script"
 
 const InfoRegis = () => {
   const [infoRegis] = useState([
@@ -33,6 +34,7 @@ const InfoRegis = () => {
         .getElementsByClassName("row_info")[0]
         .appendChild(document.getElementsByClassName("card_info")[0])
     }
+    window.addEventListener("scroll", () => ShowEachElementInfoRegis())
   })
 
   return (
@@ -50,13 +52,18 @@ const InfoRegis = () => {
         <Col xs="12" sm="12" md="4" className="card_info">
           {infoRegis.map((info, key) => {
             return (
-              <Row key={key}>
+              <Row key={key} className={`${styles.hiddenIllu} flagRegis`}>
                 <CardInfo {...info} />
               </Row>
             )
           })}
         </Col>
-        <Col xs="12" sm="12" md="4" className="ilu_info my-4">
+        <Col
+          xs="12"
+          sm="12"
+          md="4"
+          className={`ilu_info my-4 ${styles.hiddenIllu}`}
+        >
           <img src={ilustrasi} alt="" style={{ width: "100%" }} />
         </Col>
       </Row>

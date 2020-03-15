@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useState } from "react"
 import styles from "../../styles/styles.module.css"
 import webLogo from "../../assets/web.png"
@@ -7,8 +7,12 @@ import pythonLogo from "../../assets/python.png"
 import blenderLogo from "../../assets/blender.png"
 import devOpsLogo from "../../assets/Android.png"
 import CardKelas from "./cardKelas"
+import { ShowEachElementKelas } from "../../scriptJs/script"
 
 const Kelas = () => {
+  useEffect(() => {
+    window.addEventListener("scroll", () => ShowEachElementKelas())
+  })
   const [daftarKelas] = useState([
     {
       kelas: "Web",
@@ -59,7 +63,7 @@ const Kelas = () => {
       </div>
       {daftarKelas.map((kelas, key) => {
         return (
-          <div key={key}>
+          <div key={key} className={`${styles.hiddenCardKelas} flag`}>
             <CardKelas {...kelas} />
           </div>
         )

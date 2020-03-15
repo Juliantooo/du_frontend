@@ -51,7 +51,7 @@ const Menu = () => {
           <Link to="/" style={window.innerWidth <= 700 ? { width: "80%" } : {}}>
             <NavbarBrand
               id={`${styles.minify}`}
-              className="d-flex justify-content-start"
+              className="d-flex justify-content-end"
             >
               <img src={MenuLogo} alt="" id={styles.menuLogo} />
             </NavbarBrand>
